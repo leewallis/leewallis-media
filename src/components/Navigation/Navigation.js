@@ -1,7 +1,11 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
 
-import { StyledNavigation, StyledNavigationList, StyledNavigationListItems } from '../../styles';
+import { 
+  StyledNavigation,
+  StyledNavigationList,
+  StyledNavigationListItems,
+  StyledNavigationListAnchor
+} from '../../styles';
 
 function Navigation(props) {
   function handleMenuChange() {
@@ -12,16 +16,16 @@ function Navigation(props) {
     <StyledNavigation className={props.activateNavigation}>
       <StyledNavigationList className={`ground-zero ${props.activateNavigation}`}>
         <StyledNavigationListItems>
-          <NavLink exact activeClassName="current-page-item" to="/" onClick={handleMenuChange}>Home</NavLink>
+          <StyledNavigationListAnchor exact activeClassName="current-page-item" to="/" onClick={handleMenuChange}>Home</StyledNavigationListAnchor>
         </StyledNavigationListItems>
         <StyledNavigationListItems>
-          <NavLink exact activeClassName="current-page-item" to="/photography/" onClick={handleMenuChange}>Photography</NavLink>
+          <StyledNavigationListAnchor exact activeClassName="current-page-item" to="/photography/" onClick={handleMenuChange}>Photography</StyledNavigationListAnchor>
         </StyledNavigationListItems>
         <StyledNavigationListItems>
-          <NavLink exact activeClassName="current-page-item" to="/websites/" onClick={handleMenuChange}>Websites</NavLink>
+          <StyledNavigationListAnchor exact activeClassName="current-page-item" to="/websites/" onClick={handleMenuChange}>Websites</StyledNavigationListAnchor>
         </StyledNavigationListItems>
         <StyledNavigationListItems>
-          <NavLink exact activeClassName="current-page-item" to="/contact/" onClick={handleMenuChange}>Contact</NavLink>
+          <StyledNavigationListAnchor exact activeClassName="current-page-item" to="/contact/" onClick={handleMenuChange}>Contact</StyledNavigationListAnchor>
         </StyledNavigationListItems>
       </StyledNavigationList>
     </StyledNavigation>

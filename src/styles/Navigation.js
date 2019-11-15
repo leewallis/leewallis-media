@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from "react-router-dom";
 
 const StyledNavigation = styled.nav`
   background: ${({theme}) => theme.colors.base_90};
@@ -43,44 +44,6 @@ const StyledNavigationListItems = styled.li`
   margin: 0;
   text-align: center;
 
-  a {
-    color: ${({theme}) => theme.colors.base_0};
-    display: block;
-    font-family: ${({theme}) => theme.font_family.heading};
-    font-size: 3rem;
-    padding: 3rem;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &:before {
-      content: '';
-      color: ${({theme}) => theme.colors.base_60};
-      font-size: 1.6rem;
-      position: absolute;
-      top: 1.5rem;
-      left: calc( 50% - 1.5rem );
-    }
-
-    @media (min-width: 48em) {
-      font-size: 5rem;
-      padding: 3rem 6rem;
-    }
-
-    @media (min-width: 64em) {
-      font-size: 5rem;
-      padding: 3rem 6rem;
-    }
-
-    &:hover {
-      color: ${({theme}) => theme.colors.primary};
-    }
-
-    &.current-page-item {
-      color: ${({theme}) => theme.colors.primary};
-    }
-  }
-
   &:last-child {
     border-bottom: 0;
   }
@@ -118,8 +81,47 @@ const StyledNavigationListItems = styled.li`
   }
 `;
 
+const StyledNavigationListAnchor = styled(NavLink)`
+  color: ${({theme}) => theme.colors.base_0};
+  display: block;
+  font-family: ${({theme}) => theme.font_family.heading};
+  font-size: 3rem;
+  padding: 3rem;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:before {
+    content: '';
+    color: ${({theme}) => theme.colors.base_60};
+    font-size: 1.6rem;
+    position: absolute;
+    top: 1.5rem;
+    left: calc( 50% - 1.5rem );
+  }
+
+  @media (min-width: 48em) {
+    font-size: 5rem;
+    padding: 3rem 6rem;
+  }
+
+  @media (min-width: 64em) {
+    font-size: 5rem;
+    padding: 3rem 6rem;
+  }
+
+  &:hover {
+    color: ${({theme}) => theme.colors.primary};
+  }
+
+  &.current-page-item {
+    color: ${({theme}) => theme.colors.primary};
+  }
+`;
+
 export { 
   StyledNavigation,
   StyledNavigationList,
-  StyledNavigationListItems
+  StyledNavigationListItems,
+  StyledNavigationListAnchor
 };
