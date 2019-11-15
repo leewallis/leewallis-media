@@ -1,5 +1,6 @@
 export { Theme } from './Theme';
 export { GlobalStyle } from './Global';
+export { HeaderContainer } from './Header';
 
 export { 
   HamburgerContainer,
@@ -14,4 +15,6 @@ export {
 } from './Navigation';
 
 export { HomeHero } from './Home';
-export { ContactContainer } from './Contact';
+export { ContactContainer, ContactParagraph } from './Contact';
+
+export { PhotoGalleryContainer } from './PhotoGallery';

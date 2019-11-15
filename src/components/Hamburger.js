@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react';
 
-import { Navigation } from  '../Navigation/Navigation';
-import { HamburgerContainer, HamburgerContainerMeatPatty } from '../../styles';
+import { Navigation } from  './Navigation';
+import { HamburgerContainer, HamburgerContainerMeatPatty } from '../styles';
 
 function Hamburger() {
   const [active, setActive] = useState(null);

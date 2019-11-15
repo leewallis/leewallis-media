@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+
+import { Header, PhotoGallery } from '../../components';
+import { HeaderContainer } from '../../styles';
 
 function Photography() {
   return (
-    <div>
-        Photo page
-    </div>
+    <Fragment>
+      <HeaderContainer>
+        <Header />
+      </HeaderContainer>
+      <PhotoGallery />
+    </Fragment>
   );
 }
 

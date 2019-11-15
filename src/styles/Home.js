@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import HomeHeroBackground from '../assets/home-intro-001.jpg';
 
 const HomeHero = styled.div`
-  background: url(${HomeHeroBackground}) no-repeat;
+  background: url('/assets/home-intro-001.jpg') no-repeat;
   background-size: cover;
 
   .home-hero {

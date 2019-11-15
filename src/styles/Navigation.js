@@ -11,6 +11,7 @@ const StyledNavigation = styled.nav`
   top: 0;
   transition: all .5s ease-in-out;
   width: 0;
+  z-index: 9998;
 
   &.active {
     border: 3rem solid ${({theme}) => theme.colors.base_100};

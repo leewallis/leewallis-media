@@ -5,7 +5,7 @@ import {
   StyledNavigationList,
   StyledNavigationListItems,
   StyledNavigationListAnchor
-} from '../../styles';
+} from '../styles';
 
 function Navigation(props) {
   function handleMenuChange() {

@@ -12,7 +12,7 @@ const HamburgerContainer = styled.div`
   position: absolute;
   right: 6rem;
   top: 6rem;
-  z-index: 9998;
+  z-index: 9999;
 `;
 
 const HamburgerContainerMeatPatty = styled.div`

@@ -1,2 +1,4 @@
-export { Hamburger } from './Hamburger/Hamburger';
-export { Navigation } from './Navigation/Navigation';
+export { Hamburger } from './Hamburger';
+export { Header } from './Header';
+export { Navigation } from './Navigation';
+export { PhotoGallery } from './PhotoGallery';
