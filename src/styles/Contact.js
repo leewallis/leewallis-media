@@ -8,6 +8,8 @@ const ContactContainer = styled.div`
     min-height: 100vh;
 
     div {
+      background: rgba( 0, 0, 0, .7 );
+      padding: 5rem 0;
       text-align: center;
     }
   }

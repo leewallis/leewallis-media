@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Grid, Col, Row } from 'react-styled-flexboxgrid';
 
 import { HomeHero } from '../../styles';
 import LeeWallisMediaLogo from '../../assets/leewallis-full.svg';
+import { siteTitle } from '../../SEO';
 
 function Home() {
+  useEffect(() => {
+    document.title = siteTitle + ' - Brisbane based website developer and motorsport photography';
+  });
+
   return (
     <HomeHero>
       <Grid fluid>

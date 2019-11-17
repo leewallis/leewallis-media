@@ -1,0 +1,62 @@
+{
+  "project": {
+    "settings": {
+      "years": {
+        "2019": "2019",
+        "2018": "2018"
+      },
+      "categories": {
+        "tcr-australia": "TCR Australia",
+        "improved-production-queensland": "Improved Production Queensland"
+      }
+    },
+    "albums": {
+      "list": [
+        {
+          "title": "TCR",
+          "sub_title": "Round 5 - Queensland Raceway",
+          "year": "2019",
+          "cover_image": "whatever.jpg",
+          "content_list": [
+            {
+              "type": "image",
+              "filename": "image1.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Improved Production Queensland",
+          "sub_title": "Round 3 - Queensland Raceway",
+          "year": "2019",
+          "cover_image": "whatever2.jpg",
+          "content_list": [
+            {
+              "type": "image",
+              "filename": "image2.jpg"
+            },
+            {
+              "type": "image",
+              "filename": "image3.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Improved Production Queensland",
+          "sub_title": "Round 5 - Morgan Park Raceway",
+          "year": "2018",
+          "cover_image": "whatever3.jpg",
+          "content_list": [
+            {
+              "type": "image",
+              "filename": "image4.jpg"
+            },
+            {
+              "type": "image",
+              "filename": "image5.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
