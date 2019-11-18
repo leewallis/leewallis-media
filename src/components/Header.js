@@ -11,7 +11,7 @@ function Header() {
         <Row>
           <Col center="xs" xs={2}>
             <NavLink to="/">
-              <img src={LeeWallisMediaLogo} className="leewallis-logo-header" alt="Lee Wallis Media" />
+              {/* <img src={LeeWallisMediaLogo} className="leewallis-logo-header" alt="Lee Wallis Media" /> */}LW
             </NavLink>
           </Col>
           <Col center="xs" xs={10}></Col>

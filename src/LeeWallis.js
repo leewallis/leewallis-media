@@ -18,7 +18,10 @@ function LeeWallis() {
           <Route path="/contact/">
             <Contact />
           </Route>
-          <Route path="/photography/">
+          <Route exact path="/photography/">
+            <Photography />
+          </Route>
+          <Route path="/photography/:gallery_id/">
             <Photography />
           </Route>
           <Route path="/websites/">

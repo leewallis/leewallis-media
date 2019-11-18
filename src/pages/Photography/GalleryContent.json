@@ -13,6 +13,7 @@
     "albums": {
       "list": [
         {
+          "gallery_id": "tcr-australia-round-5-2019",
           "title": "TCR",
           "sub_title": "Round 5 - Queensland Raceway",
           "year": "2019",
@@ -25,6 +26,7 @@
           ]
         },
         {
+          "gallery_id": "ipra-qld-round-3-2019",
           "title": "Improved Production Queensland",
           "sub_title": "Round 3 - Queensland Raceway",
           "year": "2019",
@@ -41,6 +43,7 @@
           ]
         },
         {
+          "gallery_id": "ipra-qld-round-5-2018",
           "title": "Improved Production Queensland",
           "sub_title": "Round 5 - Morgan Park Raceway",
           "year": "2018",
