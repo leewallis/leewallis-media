@@ -1,37 +1,22 @@
 import React from 'react';
+import { Grid, Col, Row } from 'react-styled-flexboxgrid';
 
-// import { PhotoGalleryContainer } from '../../styles';
-import gallery from '../../pages/Photography/GalleryContent.json';
-
-// Gallery stuff for laterzzzz
-// const galleryImages = props.galleryData.content_list.map((contentList, index) => {
-//   return <img src={contentList.filename} alt="" key={index} />;
-// });
-
-// return galleryImages;
-
-function SetupGalleryContainers(props) {
-  return (
-    <div>
-      <h3>{props.galleryData.title}</h3>
-      <h4>{props.galleryData.sub_title}</h4>
-      <img src={props.galleryData.cover_image} alt="" />
-    </div>
-  );
-}
+import { GalleryContainer, GalleryLink } from '../../styles';
 
 function Galleries(props) {
-  const galleryListing = gallery.project.albums.list
-    .filter(list => list.year === props.year)
-    .map((list, index) => {
-      return <SetupGalleryContainers key={index} year={props.year} galleryData={list} />
-  });
-
   return (
-    <div>
-      <h2>{props.year}</h2>
-      {galleryListing}
-    </div>
+    <GalleryContainer style={{backgroundImage: 'url(' + props.galleryData.cover_image + ')'}}>
+      <GalleryLink to={`/photography/${props.galleryData.gallery_id}/`}>
+        <Grid>
+          <Row>
+            <Col>
+              <h3>{props.galleryData.title}</h3>
+              <h4>{props.galleryData.sub_title}</h4>
+            </Col>
+          </Row>
+        </Grid>
+      </GalleryLink>
+    </GalleryContainer>
   );
 }
 

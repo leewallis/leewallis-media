@@ -9,12 +9,12 @@ function Header() {
     <Fragment>
       <Grid fluid>
         <Row>
-          <Col center="xs" xs={2}>
+          <Col center="xs" xs={6} sm={2}>
             <NavLink to="/">
-              {/* <img src={LeeWallisMediaLogo} className="leewallis-logo-header" alt="Lee Wallis Media" /> */}LW
+              <img src={LeeWallisMediaLogo} className="leewallis-logo-header" alt="Lee Wallis Media" />
             </NavLink>
           </Col>
-          <Col center="xs" xs={10}></Col>
+          <Col center="xs" xs={6} sm={10}></Col>
         </Row>
       </Grid>
     </Fragment>

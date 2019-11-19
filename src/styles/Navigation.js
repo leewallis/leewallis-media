@@ -92,6 +92,10 @@ const StyledNavigationListAnchor = styled(NavLink)`
   text-decoration: none;
   text-transform: uppercase;
 
+  &:active {
+    font-family: ${({theme}) => theme.font_family.heading};
+  }
+
   &:before {
     content: '';
     color: ${({theme}) => theme.colors.base_60};

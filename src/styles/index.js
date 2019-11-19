@@ -17,4 +17,15 @@ export {
 export { HomeHero } from './Home';
 export { ContactContainer, ContactParagraph } from './Contact';
 
-export { PhotoGalleryContainer } from './PhotoGallery';
+export {
+  PhotoGalleryContainer,
+  YearArchiveContainer,
+  YearArchiveContainerSwipeLabel,
+  GalleriesContainer,
+  GalleryContainer,
+  GalleryLink,
+  EventGalleryContainer,
+  EventGalleryH1,
+  EventGalleryH2,
+  EventGalleryImageAsset
+} from './PhotoGallery';

@@ -15,7 +15,7 @@ function Home() {
       <Grid fluid>
         <Row className={`home-hero`} middle="xs" center="xs">
           <Col center="xs" xs={12}>
-            {/* <img src={LeeWallisMediaLogo} className="leewallis-logo-home" alt="Lee Wallis Media" /> */}
+            <img src={LeeWallisMediaLogo} className="leewallis-logo-home" alt="Lee Wallis Media" />
           </Col>
         </Row>
       </Grid>

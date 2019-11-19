@@ -17,6 +17,7 @@ html {
 body {
   background: ${({theme}) => theme.colors.base_100};
   color: ${({theme}) => theme.colors.base_0};
+  font-family: ${({theme}) => theme.font_family.body};
   font-size: 1.6rem;
 }
 
@@ -55,6 +56,18 @@ h3 {
 
   @media (min-width: 48em) {
     font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+}
+
+h4 {
+  font-family: ${({theme}) => theme.font_family.body};
+  font-size: 1.4rem;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+
+  @media (min-width: 48em) {
+    font-size: 2rem;
     margin-bottom: 3rem;
   }
 }
