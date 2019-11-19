@@ -14,16 +14,15 @@ function Gallery(props) {
   });
 
   const settings = {
-    // autoWidth: true,
-    controls: false,
-    edgePadding: 200,
-    // fixedWidth: 300,
-    items: 1,
+    controlsPosition: 'bottom',
+    edgePadding: 30,
+    fixedWidth: false,
     nav: false,
     mouseDrag: true,
     responsive: {
       768: {
-        // fixedWidth: 600,
+        edgePadding: 200,
+        items: 2
       }
     },
     swipeAngle: false

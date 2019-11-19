@@ -78,21 +78,42 @@ const GalleryLink = styled(Link)`
 
 const EventGalleryContainer = styled.div`
   padding-top: 15rem;
+
+  .tns-outer {
+    position: relative;
+
+    .tns-controls {
+
+      button {
+        background: ${({theme}) => theme.colors.primary};
+        border: 0;
+        color: ${({theme}) => theme.colors.base_0};
+        font-size: 3rem;
+        outline: none;
+        padding: 1rem 3rem;
+
+        &:first-child {
+        }
+      }
+    }
+  }
 `;
 
 const EventGalleryH1 = styled.h1`
   color: ${({theme}) => theme.colors.base_0};
-  font-size: 6rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
 `;
 
 const EventGalleryH2 = styled.h2`
-color: ${({theme}) => theme.colors.base_70};
-  font-size: 2.8rem;
+  color: ${({theme}) => theme.colors.base_70};
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
 `;
 
 const EventGalleryImageAsset = styled.div`
   img {
+    display: block;
     width: 100%;
   }
 `;
