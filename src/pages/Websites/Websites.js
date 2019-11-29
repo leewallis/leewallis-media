@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { Fragment, useEffect } from 'react';
+
+import { Header } from '../../components';
+import { HeaderContainer } from '../../styles';
+import { siteTitle } from '../../SEO';
 
 function Websites() {
+  useEffect(() => {
+    document.title = 'Websites Design and Development - ' + siteTitle;
+  });
+
   return (
-    <div>
-        Web page
-    </div>
+    <Fragment>
+      <HeaderContainer>
+        <Header />
+      </HeaderContainer>
+      Lee
+    </Fragment>
   );
 }
 

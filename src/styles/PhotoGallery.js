@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
+import { Col } from 'react-styled-flexboxgrid';
 
 const PhotoGalleryContainer = styled.div`
   padding-top: 15rem;
@@ -69,15 +70,22 @@ const GalleryLink = styled(Link)`
     font-size: 2.2rem;
     margin-bottom: 1rem;
     min-width: 26rem;
+    pointer-events:none;
+    user-select: none;
 
     @media (min-width: 48em) {
       font-size: 3.6rem;
     }
   }
+
+  h4 {
+    pointer-events:none;
+    user-select: none;
+  }
 `;
 
 const EventGalleryContainer = styled.div`
-  padding-top: 15rem;
+  padding-top: 25rem;
 
   .tns-outer {
     position: relative;
@@ -111,9 +119,10 @@ const EventGalleryH2 = styled.h2`
   margin-bottom: 2rem;
 `;
 
-const EventGalleryImageAsset = styled.div`
+const EventGalleryImageAsset = styled(Col)`
   img {
     display: block;
+    margin-bottom: 3rem;
     width: 100%;
   }
 `;

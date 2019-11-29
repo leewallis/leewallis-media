@@ -8,6 +8,8 @@ const ContactContainer = styled.div`
     min-height: 100vh;
 
     div {
+      border-bottom: .1rem solid ${({theme}) => theme.colors.base_90};
+      border-top: .1rem solid ${({theme}) => theme.colors.base_90};
       background: rgba( 0, 0, 0, .7 );
       padding: 5rem 0;
       text-align: center;
