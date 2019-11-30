@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Grid, Col, Row } from 'react-styled-flexboxgrid';
 
-import { HomeHero } from '../../styles';
+import { HomeHero, HomeH1 } from '../../styles';
 import LeeWallisMediaLogo from '../../assets/leewallis-full.svg';
 import { siteTitle } from '../../SEO';
 
@@ -16,6 +16,7 @@ function Home() {
         <Row className={`home-hero`} middle="xs" center="xs">
           <Col center="xs" xs={12}>
             <img src={LeeWallisMediaLogo} className="leewallis-logo-home" alt="Lee Wallis Media" />
+            <HomeH1>Motorsport photographer and web developer<br />Brisbane, Australia</HomeH1>
           </Col>
         </Row>
       </Grid>

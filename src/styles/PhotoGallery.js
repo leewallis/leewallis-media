@@ -3,13 +3,18 @@ import { Link } from "react-router-dom";
 import { Col } from 'react-styled-flexboxgrid';
 
 const PhotoGalleryContainer = styled.div`
-  padding-top: 15rem;
+  padding-top: 6rem;
 `;
 
 const YearArchiveContainer = styled.div`
   position: relative;
 
+  &:last-child {
+    margin-bottom: 4rem;
+  }
+
   h2 {
+    color: ${({theme}) => theme.colors.primary};
     font-size: 7rem;
     line-height: .75;
     margin-bottom: 0;
@@ -28,6 +33,7 @@ const YearArchiveContainer = styled.div`
 
 const YearArchiveContainerSwipeLabel = styled.div`
   font-size: 1.8rem;
+  max-width: 15rem;
   position: absolute;
   right: 2rem;
   top: 2.5rem;
@@ -79,13 +85,21 @@ const GalleryLink = styled(Link)`
   }
 
   h4 {
+    margin-bottom: 1rem;
     pointer-events:none;
     user-select: none;
+  }
+
+  p {
+    color: ${({theme}) => theme.colors.base_50};
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
   }
 `;
 
 const EventGalleryContainer = styled.div`
-  padding-top: 25rem;
+  padding-top: 4rem;
 
   .tns-outer {
     position: relative;
@@ -108,15 +122,23 @@ const EventGalleryContainer = styled.div`
 `;
 
 const EventGalleryH1 = styled.h1`
-  color: ${({theme}) => theme.colors.base_0};
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+
+  @media (min-width: 48em) {
+    font-size: 4rem;
+  }
 `;
 
 const EventGalleryH2 = styled.h2`
   color: ${({theme}) => theme.colors.base_70};
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   margin-bottom: 2rem;
+
+  @media (min-width: 48em) {
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
 `;
 
 const EventGalleryImageAsset = styled(Col)`

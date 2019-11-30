@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 const ContactContainer = styled.div`
-  background: url('/assets/contact-001.jpg') no-repeat;
+  background: url('https://media.lwcdn.co/lwm/contact-001.jpg') no-repeat;
   background-size: cover;
+  color: ${({theme}) => theme.colors.base_0};
 
   .contact-section {
-    min-height: 100vh;
+    min-height: calc( 100vh - 38rem );
 
     div {
       border-bottom: .1rem solid ${({theme}) => theme.colors.base_90};

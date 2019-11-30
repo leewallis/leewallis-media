@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Archivo Black';
   font-style: normal;
   font-weight: normal;
-  src: url('/fonts/ArchivoBlack-Regular.woff2') format( 'woff2' );
+  src: url('https://media.lwcdn.co/lwm/fonts/ArchivoBlack-Regular.woff2') format( 'woff2' );
 }
 
 html {
@@ -15,8 +15,8 @@ html {
 }
 
 body {
-  background: ${({theme}) => theme.colors.base_100};
-  color: ${({theme}) => theme.colors.base_0};
+  background: ${({theme}) => theme.colors.base_0};
+  color: ${({theme}) => theme.colors.base_100};
   font-family: ${({theme}) => theme.font_family.body};
   font-size: 1.6rem;
 }

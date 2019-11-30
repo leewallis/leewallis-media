@@ -12,6 +12,7 @@ function Galleries(props) {
             <Col>
               <h3>{props.galleryData.title}</h3>
               <h4>{props.galleryData.sub_title}</h4>
+              <p>{props.galleryData.state}</p>
             </Col>
           </Row>
         </Grid>

@@ -1,8 +1,11 @@
 import React, { Fragment, useEffect } from 'react';
 
-import { Header, PhotoGallery } from '../../components';
+import { Header, Footer, PhotoGallery } from '../../components';
 import { HeaderContainer } from '../../styles';
 import { siteTitle } from '../../SEO';
+
+// 400x267    thumbnail
+// 1700x1134  large
 
 function Photography() {
   useEffect(() => {
@@ -15,6 +18,7 @@ function Photography() {
         <Header />
       </HeaderContainer>
       <PhotoGallery />
+      <Footer />
     </Fragment>
   );
 }

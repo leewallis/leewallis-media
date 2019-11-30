@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-import { Header, Gallery as ImageGallery } from '../../components';
+import { Header, Footer, Gallery as ImageGallery } from '../../components';
 import { HeaderContainer } from '../../styles';
 import { siteTitle } from '../../SEO';
 
@@ -18,6 +18,7 @@ function Gallery() {
         <Header />
       </HeaderContainer>
       <ImageGallery slug={slug} />
+      <Footer />
     </Fragment>
   );
 }

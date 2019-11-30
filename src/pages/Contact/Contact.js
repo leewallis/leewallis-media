@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Col, Row } from 'react-styled-flexboxgrid';
 
-import { Header } from '../../components';
+import { Header, Footer } from '../../components';
 import { ContactContainer, ContactParagraph, HeaderContainer } from '../../styles';
 
 function Contact() {
@@ -20,6 +20,7 @@ function Contact() {
           </Col>
         </Row>
       </Grid>
+      <Footer />
     </ContactContainer>
   );
 }

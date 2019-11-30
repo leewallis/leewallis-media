@@ -10,9 +10,14 @@ const HamburgerContainer = styled.div`
   overflow: hidden;
   padding: 0;
   position: absolute;
-  right: 6rem;
-  top: 6rem;
+  right: 4rem;
+  top: 5.5rem;
   z-index: 9999;
+
+  @media (min-width: 48em) {
+    right: 6rem;
+    top: 7rem;
+  }
 `;
 
 const HamburgerContainerMeatPatty = styled.div`

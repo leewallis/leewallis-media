@@ -9,7 +9,7 @@ const StyledNavigation = styled.nav`
   position: absolute;
   right: 0;
   top: 0;
-  transition: all .5s ease-in-out;
+  transition: all .5s linear;
   width: 0;
   z-index: 9998;
 
@@ -28,7 +28,7 @@ const StyledNavigationList = styled.ul`
   justify-content: space-between;
   margin: 0;
   opacity: 0;
-  transition: all .5s ease-in-out;
+  transition: all .5s linear;
 
   &.active {
     opacity: 1;
@@ -93,6 +93,7 @@ const StyledNavigationListAnchor = styled(NavLink)`
   text-transform: uppercase;
 
   &:active {
+    color: ${({theme}) => theme.colors.base_100};
     font-family: ${({theme}) => theme.font_family.heading};
   }
 

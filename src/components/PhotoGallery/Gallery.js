@@ -9,7 +9,7 @@ function Gallery(props) {
   const eventObj = galleryAssets[0];
 
   const assets = eventObj.content_list.map((asset, index) => {
-    return <EventGalleryImageAsset xs={3} key={index}><img src={asset.filename} alt="" /></EventGalleryImageAsset>
+    return <EventGalleryImageAsset xs={6} sm={4} md={3} key={index}><img src={asset.filename} alt="" /></EventGalleryImageAsset>
   });
 
   return (

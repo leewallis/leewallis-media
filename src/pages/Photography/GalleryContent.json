@@ -2,8 +2,7 @@
   "project": {
     "settings": {
       "years": {
-        "2019": "2019",
-        "2018": "2018"
+        "2019": "2019"
       }
     },
     "albums": {
@@ -12,6 +11,7 @@
           "gallery_id": "tcr-australia-round-5-2019",
           "title": "TCR",
           "sub_title": "Round 5 - Queensland Raceway",
+          "state": "Queensland",
           "year": "2019",
           "cover_image": "https://assets.leewallis.com/photography/2019/tcr-rd5/cover-image.jpg",
           "content_list": [
@@ -56,6 +56,7 @@
           "gallery_id": "ipra-qld-round-3-2019",
           "title": "Improved Production",
           "sub_title": "Round 3 Queensland - Queensland Raceway",
+          "state": "Queensland",
           "year": "2019",
           "cover_image": "https://assets.leewallis.com/photography/2019/ipra-rd3/cover-image.jpg",
           "content_list": [
@@ -100,6 +101,7 @@
           "gallery_id": "tcr-australia-round-5-2019-v2",
           "title": "TCR",
           "sub_title": "Round 6 - Morgan Park Raceway",
+          "state": "Queensland",
           "year": "2019",
           "cover_image": "https://assets.leewallis.com/photography/2019/tcr-rd5/cover-image.jpg",
           "content_list": [
@@ -144,6 +146,7 @@
           "gallery_id": "tcr-australia-round-5-2019-v3",
           "title": "TCR",
           "sub_title": "Round 4 - Morgan Park Raceway",
+          "state": "Queensland",
           "year": "2019",
           "cover_image": "https://assets.leewallis.com/photography/2019/tcr-rd5/large/IMG_1439.jpg",
           "content_list": [
@@ -188,6 +191,7 @@
           "gallery_id": "tcr-australia-round-5-2019-v4",
           "title": "TCR",
           "sub_title": "Round 2 - Lakeside Park Raceway",
+          "state": "Queensland",
           "year": "2019",
           "cover_image": "https://assets.leewallis.com/photography/2019/tcr-rd5/large/IMG_1474.jpg",
           "content_list": [
