@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 const WebsiteContainer = styled.div`
+  background: ${({theme}) => theme.colors.base_98};
   padding-top: 4rem;
 `;
 
 const WebsiteH1 = styled.h1`
+  color: ${({theme}) => theme.colors.base_0};
   font-size: 2.5rem;
   padding-left: 2rem;
 
@@ -21,6 +23,7 @@ const WebsiteListingContainerCoverImage = styled.img`
 `;
 
 const WebsiteListingContainerH2 = styled.h2`
+  color: ${({theme}) => theme.colors.base_0};
   font-size: 2rem;
   margin: 1rem 0;
   text-align: center;
@@ -28,7 +31,7 @@ const WebsiteListingContainerH2 = styled.h2`
 `;
 
 const WebsiteListingContainerTech = styled.div`
-  color: ${({theme}) => theme.colors.base_70};
+  color: ${({theme}) => theme.colors.base_50};
   margin-bottom: 1rem;
   text-align: center;
 

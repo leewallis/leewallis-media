@@ -13,7 +13,7 @@ function Websites() {
 
   const WebsiteArchive = website_archive.project.websites.list
     .map((list, index) => {
-      return <WebsiteListing key={index} list={list} />
+      return <WebsiteListing key={index} list={list} index={index} />
     });
 
   return (

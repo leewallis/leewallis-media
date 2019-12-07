@@ -12,7 +12,7 @@ const HamburgerContainer = styled.div`
   position: absolute;
   right: 4rem;
   top: 5.5rem;
-  z-index: 9999;
+  z-index: 4999;
 
   @media (min-width: 48em) {
     right: 6rem;
