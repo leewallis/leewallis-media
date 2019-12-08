@@ -4,7 +4,7 @@ import React from 'react';
 // import { EventGalleryContainer, EventGalleryH1, EventGalleryH2, EventGalleryImageAsset } from '../../styles';
 
 function Lightbox(props) {
-  console.log(props.filename);
+  console.log(props);
 
   return (
     <div>

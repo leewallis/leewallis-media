@@ -4302,6 +4302,11 @@ fsevents@^1.2.7:
     nan "^2.12.1"
     node-pre-gyp "^0.12.0"
 
+fslightbox-react@^1.4.6:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/fslightbox-react/-/fslightbox-react-1.4.6.tgz#4ab8b4975558c424e4a72a9fa7bf3c8c22359fc5"
+  integrity sha512-luLfcDUfFtG2h7Uh/7VTrabAAxbHrwiT0sA5SgcazzoMgMnv/d/wfv5Ueb2julFWcK2lmZlOWLrKpf5FQzKqtg==
+
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
@@ -8233,11 +8238,6 @@ react-is@^16.8.1, react-is@^16.8.4:
   version "16.10.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.10.1.tgz#0612786bf19df406502d935494f0450b40b8294f"
   integrity sha512-BXUMf9sIOPXXZWqr7+c5SeOKJykyVr2u0UDzEf4LNGc6taGkQe1A9DFD07umCIXz45RLr9oAAwZbAJ0Pkknfaw==
-
-react-modal-image@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/react-modal-image/-/react-modal-image-2.5.0.tgz#c9f047ae2a1b8ca54c35dbdad3bbca846cf21632"
-  integrity sha512-QucQrgOLmF44CD4EFDLZ9ICrbHEZwztjALgx1GsNmMWZrAtmzDLarG+T1TK2OSE4w1eHfkXtmEhQibjbt0mT2g==
 
 react-router-dom@^5.1.2:
   version "5.1.2"

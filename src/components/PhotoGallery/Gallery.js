@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Col, Row } from 'react-styled-flexboxgrid';
-import ModalImage from "react-modal-image";
 
+// import { Lightbox } from './Lightbox';
 import { EventGalleryContainer, EventGalleryH1, EventGalleryH2, EventGalleryImageAsset } from '../../styles';
 import gallery from '../../pages/Photography/GalleryContent.json';
 
@@ -10,10 +10,11 @@ function Gallery(props) {
   const eventObj = galleryAssets[0];
 
   const assets = eventObj.content_list.map((asset, index) => {
-    return <EventGalleryImageAsset xs={6} sm={4} md={3} key={index}>
-      {/* <a href={asset.filename}><img src={asset.thumbnail} alt="Lee Wallis Media gallery" /></a> */}
-      <ModalImage hideDownload hideZoom small={asset.thumbnail} large={asset.filename} alt="" />
+    return (
+    <EventGalleryImageAsset xs={6} sm={4} md={3} key={index}>
+      <a href={asset.filename}><img src={asset.thumbnail} alt="Lee Wallis Media gallery" /></a>
     </EventGalleryImageAsset>
+    );
   });
 
   return (
