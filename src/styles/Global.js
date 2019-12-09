@@ -76,6 +76,10 @@ p {
   font-family: ${({theme}) => theme.font_family.body};
   font-size: 2rem;
 }
+
+.fslightbox-container {
+  background: rgba(0, 0, 0, .95) !important;
+}
 `;
 
 export { GlobalStyle };

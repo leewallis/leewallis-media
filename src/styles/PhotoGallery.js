@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
-import { Col } from 'react-styled-flexboxgrid';
 
 const PhotoGalleryContainer = styled.div`
   padding-top: 6rem;
@@ -98,66 +97,11 @@ const GalleryLink = styled(Link)`
   }
 `;
 
-const EventGalleryContainer = styled.div`
-  padding-top: 4rem;
-
-  .tns-outer {
-    position: relative;
-
-    .tns-controls {
-
-      button {
-        background: ${({theme}) => theme.colors.primary};
-        border: 0;
-        color: ${({theme}) => theme.colors.base_0};
-        font-size: 3rem;
-        outline: none;
-        padding: 1rem 3rem;
-
-        &:first-child {
-        }
-      }
-    }
-  }
-`;
-
-const EventGalleryH1 = styled.h1`
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-
-  @media (min-width: 48em) {
-    font-size: 4rem;
-  }
-`;
-
-const EventGalleryH2 = styled.h2`
-  color: ${({theme}) => theme.colors.base_70};
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
-
-  @media (min-width: 48em) {
-    font-size: 2.4rem;
-    margin-bottom: 4rem;
-  }
-`;
-
-const EventGalleryImageAsset = styled(Col)`
-  img {
-    display: block;
-    margin-bottom: 3rem;
-    width: 100%;
-  }
-`;
-
 export {
   PhotoGalleryContainer,
   YearArchiveContainer,
   YearArchiveContainerSwipeLabel,
   GalleriesContainer,
   GalleryContainer,
-  GalleryLink,
-  EventGalleryContainer,
-  EventGalleryH1,
-  EventGalleryH2,
-  EventGalleryImageAsset
+  GalleryLink
 };

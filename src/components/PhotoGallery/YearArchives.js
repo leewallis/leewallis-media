@@ -3,7 +3,13 @@ import TinySlider from 'tiny-slider-react';
 import { Grid, Col, Row } from 'react-styled-flexboxgrid';
 import FsLightbox from 'fslightbox-react';
 
-import { YearArchiveContainer, YearArchiveContainerSwipeLabel, GalleriesContainer, GalleryContainer, GalleryLink } from '../../styles';
+import {
+  YearArchiveContainer,
+  YearArchiveContainerSwipeLabel,
+  GalleriesContainer,
+  GalleryContainer,
+  GalleryLink
+} from '../../styles';
 import gallery from '../../pages/Photography/GalleryContent.json';
 
 function YearArchives(props) {

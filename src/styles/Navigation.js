@@ -11,12 +11,16 @@ const StyledNavigation = styled.nav`
   top: 0;
   transition: all .5s linear;
   width: 0;
-  z-index: 9998;
+  z-index: 4998;
 
   &.active {
     border: 3rem solid ${({theme}) => theme.colors.base_100};
     height: calc( 100vh - 6rem );
     width: calc( 100vw - 6rem );
+
+    @media (min-width: 48em) {
+      width: 50vw;
+    }
   }
 `;
 
