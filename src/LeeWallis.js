@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { Reset } from 'styled-reset';
 
 import { GlobalStyle, Theme } from './styles';
-import { Contact, Home, Photography, Websites } from './pages';
+import { Contact, Home, Photography, Gallery, Websites } from './pages';
 import { Hamburger } from  './components';
 
 function LeeWallis() {
@@ -20,6 +20,9 @@ function LeeWallis() {
           </Route>
           <Route exact path="/photography/">
             <Photography />
+          </Route>
+          <Route exact path="/photography/:gallery_slug">
+            <Gallery />
           </Route>
           <Route path="/websites/">
             <Websites />

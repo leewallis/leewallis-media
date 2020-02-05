@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import TinySlider from 'tiny-slider-react';
 import { Grid, Col, Row } from 'react-styled-flexboxgrid';
-import FsLightbox from 'fslightbox-react';
 
 import {
   YearArchiveContainer,
@@ -13,15 +12,12 @@ import {
 import gallery from '../../pages/Photography/GalleryContent.json';
 
 function YearArchives(props) {
-  const [toggler, setToggler] = useState(false);
-  const [currentGallery, setCurrentGallery] = useState(null);
-
   const galleryListing = gallery.project.albums.list
     .filter(list => list.year === props.year)
     .map((list, index) => {
       return (
-        <GalleryContainer style={{backgroundImage: 'url(' + list.cover_image + ')'}}>
-          <GalleryLink onClick={() => {setToggler(!toggler); setCurrentGallery(list)}}>
+        <GalleryContainer key={index} style={{backgroundImage: 'url(' + list.cover_image + ')'}}>
+          <GalleryLink to={list.gallery_id}>
             <Grid>
               <Row>
                 <Col>
@@ -59,7 +55,6 @@ function YearArchives(props) {
           {galleryListing}
         </TinySlider>
       </GalleriesContainer>
-      {currentGallery && <FsLightbox type="image" toggler={toggler} sources={currentGallery.content_list.map(img => img.filename)} />}
     </YearArchiveContainer>
   );
 }

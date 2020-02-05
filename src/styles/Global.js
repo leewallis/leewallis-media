@@ -41,6 +41,7 @@ h1 {
 h2 {
   font-family: ${({theme}) => theme.font_family.heading};
   font-size: 3.5rem;
+  line-height: 1.2
   margin-bottom: 3rem;
 
   @media (min-width: 48em) {

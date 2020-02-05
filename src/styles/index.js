@@ -39,5 +39,12 @@ export {
   YearArchiveContainerSwipeLabel,
   GalleriesContainer,
   GalleryContainer,
-  GalleryLink
+  GalleryLink,
+  GalleryShowingContainer,
+  GalleryShowingHeading,
+  GalleryShowingHeadingSubTitle,
+  GalleryShowingState,
+  GalleryElementsContainer,
+  GalleryElementsAssetCol,
+  GalleryAsset
 } from './PhotoGallery';

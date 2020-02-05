@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
+import { Col } from 'react-styled-flexboxgrid';
 
 const PhotoGalleryContainer = styled.div`
   padding-top: 6rem;
@@ -97,11 +98,55 @@ const GalleryLink = styled(Link)`
   }
 `;
 
+const GalleryShowingContainer = styled.div`
+  padding: 4rem;
+`;
+
+const GalleryShowingHeading = styled.h2`
+  color: ${({theme}) => theme.colors.primary};
+  margin-bottom: 2rem;
+`;
+
+const GalleryShowingHeadingSubTitle = styled.span`
+  color: ${({theme}) => theme.colors.base_70};
+  display: block;
+  font-size: 3rem;
+`;
+
+const GalleryShowingState = styled.span`
+  color: ${({theme}) => theme.colors.base_40};
+  display: block;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+`;
+
+const GalleryElementsContainer = styled.div`
+  padding: 0;
+`;
+
+const GalleryElementsAssetCol = styled(Col)`
+  
+`;
+
+const GalleryAsset = styled.img`
+  max-width: 100%;
+  margin-bottom: 3rem;
+  width: 100%;
+`;
+
 export {
   PhotoGalleryContainer,
   YearArchiveContainer,
   YearArchiveContainerSwipeLabel,
   GalleriesContainer,
   GalleryContainer,
-  GalleryLink
+  GalleryLink,
+  GalleryShowingContainer,
+  GalleryShowingHeading,
+  GalleryShowingHeadingSubTitle,
+  GalleryShowingState,
+  GalleryElementsContainer,
+  GalleryElementsAssetCol,
+  GalleryAsset
 };
