@@ -1,7 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import { GalleryShowingContainer, GalleryShowingHeading, GalleryShowingHeadingSubTitle, GalleryShowingState } from '../../styles';
+import { 
+  GalleryShowingContainer,
+  GalleryShowingHeading,
+  GalleryShowingHeadingSubTitle,
+  GalleryShowingState
+} from '../../styles';
 import gallery from '../../pages/Photography/GalleryContent.json';
 import { GalleryElements } from './GalleryElements';
 

@@ -5,6 +5,7 @@ import { Col, Row } from 'react-styled-flexboxgrid';
 import { FooterGrid, FooterH3, FooterP, FooterCopyright, SocialMediaIcon } from '../styles';
 import { ReactComponent as Facebook } from '../assets/facebook.svg';
 import { ReactComponent as Instagram } from '../assets/instagram.svg';
+import { ReactComponent as Github } from '../assets/github.svg';
 
 function Footer() {  
   return (
@@ -17,11 +18,11 @@ function Footer() {
             <FooterP>0421 332 579</FooterP>
           </Col>
           <Col xs={12} sm={4}>
-            <FooterH3>Social Media</FooterH3>
+            <FooterH3>Social Media &amp; Work</FooterH3>
             <SocialMediaIcon href="https://www.facebook.com/leewallis.media/" target="_blank"><Facebook fill="#ffffff" /></SocialMediaIcon>
             <SocialMediaIcon href="https://www.instagram.com/leewallis_media/" target="_blank"><Instagram fill="#ffffff" /></SocialMediaIcon>
+            <SocialMediaIcon href="https://github.com/leewallis" target="_blank"><Github fill="#ffffff" /></SocialMediaIcon>
           </Col>
-          <Col xs={12} sm={4}>&nbsp;</Col>
         </Row>
         <Row>
           <Col xs={12}>

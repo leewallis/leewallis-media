@@ -19,7 +19,7 @@ const YearArchiveContainer = styled.div`
     line-height: .75;
     margin-bottom: 0;
 
-    @media (min-width: 48em) {
+    @media (min-width: 64em) {
       font-size: 17rem;
       left: 0;
       letter-spacing: -1.2rem;
@@ -38,7 +38,7 @@ const YearArchiveContainerSwipeLabel = styled.div`
   right: 2rem;
   top: 2.5rem;
 
-  @media (min-width: 48em) {
+  @media (min-width: 64em) {
     font-size: 2rem;
     left: 24rem;
     top: 17rem;
@@ -49,7 +49,7 @@ const YearArchiveContainerSwipeLabel = styled.div`
 const GalleriesContainer = styled.div`
   width: 100vw;
 
-  @media (min-width: 48em) {
+  @media (min-width: 64em) {
     margin-left: 35rem;
     width: calc(100vw - 35rem);
   }
@@ -75,12 +75,14 @@ const GalleryLink = styled(Link)`
   h3 {
     font-size: 2.2rem;
     margin-bottom: 1rem;
+    max-width: 30rem;
     min-width: 26rem;
     pointer-events:none;
     user-select: none;
 
     @media (min-width: 48em) {
       font-size: 3.6rem;
+      max-width: 65rem;
     }
   }
 

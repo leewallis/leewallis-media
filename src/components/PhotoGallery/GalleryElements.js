@@ -1,13 +1,17 @@
 import React from 'react';
 import { Grid, Row } from 'react-styled-flexboxgrid';
 
-import { GalleryElementsContainer, GalleryElementsAssetCol, GalleryAsset } from '../../styles';
+import { 
+  GalleryElementsContainer,
+  GalleryElementsAssetCol,
+  GalleryAsset 
+} from '../../styles';
 
 function GalleryElements(props) {  
   const galleryAssets = props.galleryAssets
     .map((assets, index) => {
       return (
-        <GalleryElementsAssetCol key={index} xs={2} sm={4} md={3}>
+        <GalleryElementsAssetCol key={index} xs={2} sm={6} md={4}>
           <GalleryAsset src={assets.filename}/>
         </GalleryElementsAssetCol>
       );
