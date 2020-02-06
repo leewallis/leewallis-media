@@ -4302,11 +4302,6 @@ fsevents@^1.2.7:
     nan "^2.12.1"
     node-pre-gyp "^0.12.0"
 
-fslightbox-react@^1.4.6:
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/fslightbox-react/-/fslightbox-react-1.4.6.tgz#4ab8b4975558c424e4a72a9fa7bf3c8c22359fc5"
-  integrity sha512-luLfcDUfFtG2h7Uh/7VTrabAAxbHrwiT0sA5SgcazzoMgMnv/d/wfv5Ueb2julFWcK2lmZlOWLrKpf5FQzKqtg==
-
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
