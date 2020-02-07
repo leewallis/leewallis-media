@@ -27,6 +27,12 @@ const FooterCopyright = styled.p`
 const SocialMediaIcon = styled.a`
   display: inline-block;
   margin-right: 1rem;
+
+  &:hover {
+    svg {
+      fill: ${({theme}) => theme.colors.primary};
+    }
+  }
 `;
 
 export { 
