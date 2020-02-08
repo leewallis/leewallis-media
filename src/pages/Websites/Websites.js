@@ -1,10 +1,14 @@
 import React, { Fragment, useEffect } from 'react';
 import { Grid, Row } from 'react-styled-flexboxgrid';
+import ReactGA from 'react-ga';
 
 import { Header, Footer, WebsiteListing } from '../../components';
 import { HeaderContainer, WebsiteContainer, WebsiteH1 } from '../../styles';
-import { siteTitle } from '../../SEO';
+import { siteTitle, GAID } from '../../SEO';
 import website_archive from './WebsiteContent.json';
+
+ReactGA.initialize(GAID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function Websites() {
   useEffect(() => {

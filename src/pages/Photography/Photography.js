@@ -1,10 +1,13 @@
 import React, { Fragment, useEffect } from 'react';
+import ReactGA from 'react-ga';
 
 import { Header, Footer, PhotoGallery } from '../../components';
 import { HeaderContainer } from '../../styles';
 import { siteTitle } from '../../SEO';
 
-// 400x267    thumbnail
+ReactGA.initialize(GAID);
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 // 1700x1134  large
 
 function Photography() {
