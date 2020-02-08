@@ -3,7 +3,7 @@ import ReactGA from 'react-ga';
 
 import { Header, Footer, PhotoGallery } from '../../components';
 import { HeaderContainer } from '../../styles';
-import { siteTitle } from '../../SEO';
+import { siteTitle, GAID } from '../../SEO';
 
 ReactGA.initialize(GAID);
 ReactGA.pageview(window.location.pathname + window.location.search);
