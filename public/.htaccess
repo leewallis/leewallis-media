@@ -4,6 +4,13 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\.leewallis\.com [NC]
 RewriteRule ^(.*)$ https://leewallis.com/$1 [L,R=301]
 
+RewriteEngine On
+RewriteBase /
+RewriteRule ^/$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . / [L]
+
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php70” package as the default “PHP” programming language.
 <IfModule mime_module>
