@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const HomeHero = styled.div`
-  background: url('https://media.lwcdn.co/lwm/home-intro-001.jpg') no-repeat;
+  background: url('https://assets.leewallis.com/home-intro-001.jpg') no-repeat;
   background-size: cover;
 
   .home-hero {

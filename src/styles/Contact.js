@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const ContactContainer = styled.div`
-  background: url('https://media.lwcdn.co/lwm/contact-001.jpg') no-repeat;
+  background: url('https://assets.leewallis.com/contact-001.jpg') no-repeat;
   background-size: cover;
   color: ${({theme}) => theme.colors.base_0};
 

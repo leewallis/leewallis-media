@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import '../assets/fonts/ArchivoBlack-Regular.woff2';
 
 const GlobalStyle = createGlobalStyle`
 @font-face {
@@ -6,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Archivo Black';
   font-style: normal;
   font-weight: normal;
-  src: url('https://media.lwcdn.co/lwm/fonts/ArchivoBlack-Regular.woff2') format( 'woff2' );
+  src: local('Archivo Black'), url('../assets/fonts/ArchivoBlack-Regular.woff2') format( 'woff2' );
 }
 
 html {
