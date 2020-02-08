@@ -6,6 +6,14 @@ const FooterGrid = styled(Grid)`
   color: ${({theme}) => theme.colors.base_0};
   padding-bottom: 4rem;
   padding-top: 4rem;
+
+  .social-media {
+    margin-top: 2rem;
+
+    @media (min-width: 48em) {
+      margin-top: 0;
+    }
+  }
 `;
 
 const FooterH3 = styled.h3`

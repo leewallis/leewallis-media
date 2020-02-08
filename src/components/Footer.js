@@ -17,7 +17,7 @@ function Footer() {
             <FooterP>leewallis@gmail.com</FooterP>
             <FooterP>0421 332 579</FooterP>
           </Col>
-          <Col xs={12} sm={4}>
+          <Col xs={12} sm={4} className={"social-media"}>
             <FooterH3>Social Media &amp; Work</FooterH3>
             <SocialMediaIcon href="https://www.facebook.com/leewallis.media/" target="_blank"><Facebook fill="#ffffff" /></SocialMediaIcon>
             <SocialMediaIcon href="https://www.instagram.com/leewallis_media/" target="_blank"><Instagram fill="#ffffff" /></SocialMediaIcon>

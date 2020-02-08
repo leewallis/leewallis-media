@@ -23,10 +23,14 @@ const HomeHero = styled.div`
 
 const HomeH1 = styled.h1`
   color: ${({theme}) => theme.colors.base_0};
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.5;
   margin-top: 6rem;
   text-transform: initial;
+
+  @media (min-width: 48em) {
+    font-size: 3rem;
+  }
 `;
 
 export { HomeHero, HomeH1 };

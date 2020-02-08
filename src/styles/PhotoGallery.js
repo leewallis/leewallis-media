@@ -74,7 +74,7 @@ const GalleryLink = styled(Link)`
 
   h3 {
     font-size: 2.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     max-width: 30rem;
     min-width: 26rem;
     pointer-events:none;
@@ -82,14 +82,19 @@ const GalleryLink = styled(Link)`
 
     @media (min-width: 48em) {
       font-size: 3.6rem;
+      margin-bottom: 1rem;
       max-width: 65rem;
     }
   }
 
   h4 {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     pointer-events:none;
     user-select: none;
+
+    @media (min-width: 48em) {
+      margin-bottom: 1rem;
+    }
   }
 
   p {
@@ -101,26 +106,45 @@ const GalleryLink = styled(Link)`
 `;
 
 const GalleryShowingContainer = styled.div`
-  padding: 4rem;
+  padding: 2rem;
+
+  @media (min-width: 48em) {
+    padding: 4rem;
+  }
 `;
 
 const GalleryShowingHeading = styled.h2`
   color: ${({theme}) => theme.colors.primary};
+  font-size: 3rem;
   margin-bottom: 2rem;
+
+  @media (min-width: 48em) {
+    font-size: 3.5rem;
+  }
 `;
 
 const GalleryShowingHeadingSubTitle = styled.span`
   color: ${({theme}) => theme.colors.base_70};
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+  @media (min-width: 48em) {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
 `;
 
 const GalleryShowingState = styled.span`
   color: ${({theme}) => theme.colors.base_40};
   display: block;
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin-bottom: .5rem;
   text-transform: uppercase;
+
+  @media (min-width: 48em) {
+    font-size: 2rem;
+  }
 `;
 
 const GalleryElementsContainer = styled.div`

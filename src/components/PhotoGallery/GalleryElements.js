@@ -12,7 +12,7 @@ function GalleryElements(props) {
   const galleryAssets = props.galleryAssets.content_list
     .map((assets, index) => {
       return (
-        <GalleryElementsAssetCol key={index} xs={2} sm={6} md={4}>
+        <GalleryElementsAssetCol key={index} xs={6} sm={6} md={4}>
           <GalleryAsset src={mediaCDN + '/' + props.galleryAssets.year + assets.filename}/>
         </GalleryElementsAssetCol>
       );
