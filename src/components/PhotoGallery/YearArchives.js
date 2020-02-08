@@ -9,6 +9,7 @@ import {
   GalleryContainer,
   GalleryLink
 } from '../../styles';
+import { mediaCDN } from '../../SEO';
 import gallery from '../../pages/Photography/GalleryContent.json';
 
 function YearArchives(props) {
@@ -16,7 +17,7 @@ function YearArchives(props) {
     .filter(list => list.year === props.year)
     .map((list, index) => {
       return (
-        <GalleryContainer key={index} style={{backgroundImage: 'url(' + list.cover_image + ')'}}>
+        <GalleryContainer key={index} style={{backgroundImage: 'url(' + mediaCDN + '/' + list.year + list.cover_image + ')'}}>
           <GalleryLink to={list.gallery_id}>
             <Grid>
               <Row>

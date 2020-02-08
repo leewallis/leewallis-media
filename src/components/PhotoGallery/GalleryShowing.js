@@ -22,7 +22,7 @@ function GalleryShowing() {
       galleryState = list.state;
       galleryTitle = list.title;
       gallerySubTitle = list.sub_title;
-      return (<GalleryElements key={index} galleryAssets={list.content_list} />);
+      return (<GalleryElements key={index} galleryAssets={list} />);
     });
 
   return (
