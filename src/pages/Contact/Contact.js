@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Grid, Col, Row } from 'react-styled-flexboxgrid';
 import ReactGA from 'react-ga';
 
 import { Header, Footer } from '../../components';
 import { ContactContainer, ContactParagraph, HeaderContainer } from '../../styles';
+import { siteTitle, GAID } from '../../SEO';
 
 ReactGA.initialize(GAID);
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 function Contact() {
+  useEffect(() => {
+    document.title = siteTitle + ' - Contact';
+  });
+
   return (
     <ContactContainer>
       <HeaderContainer>
