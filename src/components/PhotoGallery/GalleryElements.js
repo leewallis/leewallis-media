@@ -15,7 +15,7 @@ function GalleryElements(props) {
       return (
         <GalleryElementsAssetCol key={index} xs={12} sm={6} md={4}>
           <LazyLoad throttle={200}>
-            <GalleryAsset src={mediaCDN + '/' + props.galleryAssets.year + assets.filename + '?v=' + Math.floor(Math.random() * 1000) + 1}/>
+            <GalleryAsset src={mediaCDN + '/' + props.galleryAssets.year + assets.filename} />
           </LazyLoad>
         </GalleryElementsAssetCol>
       );
