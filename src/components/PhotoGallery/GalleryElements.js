@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Row } from 'react-styled-flexboxgrid';
+import LazyLoad from 'react-lazyload';
 
 import { 
   GalleryElementsContainer,
@@ -13,7 +14,9 @@ function GalleryElements(props) {
     .map((assets, index) => {
       return (
         <GalleryElementsAssetCol key={index} xs={6} sm={6} md={4}>
-          <GalleryAsset src={mediaCDN + '/' + props.galleryAssets.year + assets.filename}/>
+          <LazyLoad>
+            <GalleryAsset src={mediaCDN + '/' + props.galleryAssets.year + assets.filename}/>
+          </LazyLoad>
         </GalleryElementsAssetCol>
       );
     });

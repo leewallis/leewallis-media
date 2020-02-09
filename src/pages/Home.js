@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { Grid, Col, Row } from 'react-styled-flexboxgrid';
 import ReactGA from 'react-ga';
 
-import { HomeHero, HomeH1 } from '../../styles';
-import LeeWallisMediaLogo from '../../assets/leewallis-full.svg';
-import { siteTitle, GAID } from '../../SEO';
+import { HomeHero, HomeH1 } from '../styles';
+import LeeWallisMediaLogo from '../assets/leewallis-full.svg';
+import { siteTitle, GAID } from '../SEO';
 
 ReactGA.initialize(GAID);
 ReactGA.pageview(window.location.pathname + window.location.search);

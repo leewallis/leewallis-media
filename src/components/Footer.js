@@ -26,7 +26,7 @@ function Footer() {
         </Row>
         <Row>
           <Col xs={12}>
-            <FooterCopyright>&copy; Copyright 2019 - Lee Wallis.</FooterCopyright>
+            <FooterCopyright>&copy; Copyright 2020 - Lee Wallis.</FooterCopyright>
           </Col>
         </Row>
       </FooterGrid>
