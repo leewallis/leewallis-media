@@ -13,7 +13,7 @@ function GalleryElements(props) {
   const galleryAssets = props.galleryAssets.content_list
     .map((assets, index) => {
       return (
-        <GalleryElementsAssetCol key={index} xs={10} sm={6} md={4} xsOffset={1} smOffset={0}>
+        <GalleryElementsAssetCol key={index} xs={12} sm={6} md={4}>
           <LazyLoad throttle={200}>
             <GalleryAsset src={mediaCDN + '/' + props.galleryAssets.year + assets.filename + '?v=' + Math.floor(Math.random() * 1000) + 1}/>
           </LazyLoad>
