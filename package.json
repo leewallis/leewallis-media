@@ -8,7 +8,7 @@
     "react-ga": "^2.7.0",
     "react-lazyload": "^2.6.5",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "5.0.1",
     "react-styled-flexboxgrid": "^3.1.0",
     "styled-components": "^4.4.1",
     "styled-reset": "^4.0.6",
